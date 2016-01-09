@@ -11,8 +11,9 @@
 		C7C1A2641C4067F200B380E6 /* RGB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C1A2591C4067F100B380E6 /* RGB.framework */; };
 		C7C1A2691C4067F200B380E6 /* RGBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1A2681C4067F200B380E6 /* RGBTests.swift */; };
 		C7C1A2831C406EE300B380E6 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C1A2821C406EE300B380E6 /* Curry.framework */; };
-		C7C1A2861C406EF700B380E6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C1A2841C406EF700B380E6 /* Nimble.framework */; };
-		C7C1A2871C406EF700B380E6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C1A2851C406EF700B380E6 /* Quick.framework */; };
+		C7C1A28A1C4079B500B380E6 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C1A2891C4079B500B380E6 /* Quick.framework */; };
+		C7C1A28C1C4079BD00B380E6 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7C1A28B1C4079BD00B380E6 /* Nimble.framework */; };
+		C7C1A28E1C407C3500B380E6 /* RGBUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C1A28D1C407C3500B380E6 /* RGBUIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,8 +34,9 @@
 		C7C1A2681C4067F200B380E6 /* RGBTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RGBTests.swift; sourceTree = "<group>"; };
 		C7C1A26A1C4067F200B380E6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7C1A2821C406EE300B380E6 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "Carthage/Checkouts/Curry/build/Debug-iphoneos/Curry.framework"; sourceTree = "<group>"; };
-		C7C1A2841C406EF700B380E6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
-		C7C1A2851C406EF700B380E6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		C7C1A2891C4079B500B380E6 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Carthage/Checkouts/Quick/build/Debug-iphoneos/Quick.framework"; sourceTree = "<group>"; };
+		C7C1A28B1C4079BD00B380E6 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Carthage/Checkouts/Nimble/build/Debug-iphoneos/Nimble.framework"; sourceTree = "<group>"; };
+		C7C1A28D1C407C3500B380E6 /* RGBUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RGBUIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,8 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7C1A2861C406EF700B380E6 /* Nimble.framework in Frameworks */,
-				C7C1A2871C406EF700B380E6 /* Quick.framework in Frameworks */,
+				C7C1A28C1C4079BD00B380E6 /* Nimble.framework in Frameworks */,
+				C7C1A28A1C4079B500B380E6 /* Quick.framework in Frameworks */,
 				C7C1A2641C4067F200B380E6 /* RGB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +85,7 @@
 			children = (
 				C7C1A25C1C4067F100B380E6 /* RGB.h */,
 				C7C1A25E1C4067F100B380E6 /* Info.plist */,
+				C7C1A28D1C407C3500B380E6 /* RGBUIColor.swift */,
 			);
 			path = RGB;
 			sourceTree = "<group>";
@@ -99,8 +102,8 @@
 		C7C1A2881C406FA200B380E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C7C1A2841C406EF700B380E6 /* Nimble.framework */,
-				C7C1A2851C406EF700B380E6 /* Quick.framework */,
+				C7C1A28B1C4079BD00B380E6 /* Nimble.framework */,
+				C7C1A2891C4079B500B380E6 /* Quick.framework */,
 				C7C1A2821C406EE300B380E6 /* Curry.framework */,
 			);
 			name = Frameworks;
@@ -168,6 +171,7 @@
 				TargetAttributes = {
 					C7C1A2581C4067F100B380E6 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FZ53NL6W4J;
 					};
 					C7C1A2621C4067F200B380E6 = {
 						CreatedOnToolsVersion = 7.2;
@@ -214,6 +218,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7C1A28E1C407C3500B380E6 /* RGBUIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +333,8 @@
 		C7C1A26E1C4067F200B380E6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -338,12 +345,15 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.levelapp.RGB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		C7C1A26F1C4067F200B380E6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -362,8 +372,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = RGBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -377,8 +387,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
 					"$(PROJECT_DIR)/Carthage/Checkouts/Quick/build/Debug-iphoneos",
+					"$(PROJECT_DIR)/Carthage/Checkouts/Nimble/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = RGBTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
